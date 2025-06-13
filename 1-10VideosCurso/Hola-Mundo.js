@@ -12,4 +12,14 @@ Boolean: Almacena un valor Logico
 Null: Es la Ausencia de una referencia de un objeto 
 Undefined: Ausencia de un valor*/
 
-//
+//Para Saber el tipo de dato que estamos utilizando podemos colocar typeof. Como por ejemplo:
+let miEntero = 10;
+console.log(typeof miEntero); //En este ejemplo se puede observar como imprime el tipo de dato que recibe la consola.
+let miCadena = "hola";
+console.log(typeof miCadena);
+let miBoolean = true;
+console.log(typeof miBoolean);
+
+/* Constantes en javaScript:
+Es una variable que una vez definido su valor, ya no se puede modificar. Como pr ejemplo:*/
+const MI_CONSTANTE = 10; // Ya que esta definido su valor ya no se puede modificar.
