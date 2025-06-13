@@ -1,0 +1,1 @@
+console.log("Hola Mundo") //Sirve para mandar Informacion a la Consola
