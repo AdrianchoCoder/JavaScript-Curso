@@ -12,7 +12,7 @@ class Direccion {
     
     // Método para mostrar la dirección de forma bonita
     mostrarDireccion() {
-        console.log(`📍 Dirección: ${this.calle}, ${this.ciudad}`);
+        console.log(`Dirección: ${this.calle}, ${this.ciudad}`);
     }
 }
 
@@ -23,7 +23,7 @@ class Persona {
         this.nombre = nombre;
         //Se Coloco como un Valor Privado con "_", Ejemplo:
         this._edad = edad;
-        // ✅ NUEVO: Agregamos la dirección como propiedad
+        // Agregamos la dirección como propiedad
         this.direccion = direccion;
     }
     
@@ -59,7 +59,7 @@ class Persona {
         console.log("=== Mi Información ===");
         
         for (let prop in this) {
-            // ✅ MEJORADO: Manejo especial para la dirección
+            // Manejo especial para la dirección
             if (prop === 'direccion') {
                 console.log(`${prop}: ${this[prop].obtenerDireccionCompleta()}`);
             } else {
@@ -68,12 +68,12 @@ class Persona {
         }   
     }
     
-    // ✅ NUEVO MÉTODO: Para mostrar solo la dirección
+    // MÉTODO: Para mostrar solo la dirección
     mostrarDireccionCompleta() {
         console.log(`${this.nombre} vive en: ${this.direccion.obtenerDireccionCompleta()}`);
     }
     
-    // ✅ NUEVO MÉTODO: Para cambiar la dirección
+    // MÉTODO: Para cambiar la dirección
     cambiarDireccion(nuevaDireccion) {
         this.direccion = nuevaDireccion;
         console.log(`${this.nombre} se mudó a: ${this.direccion.obtenerDireccionCompleta()}`);
@@ -91,7 +91,7 @@ class Estudiante extends Persona{
         return `¡Hola Me Presento!, ${super.ObtenerSaludo()} y soy del Curso: ${this.curso}`;
     }
     
-    // ✅ NUEVO: Presentación completa con dirección
+    // Presentación completa con dirección
     PresentarseCompleto(){
         return `${this.Presentarse()} y vivo en ${this.direccion.obtenerDireccionCompleta()}`;
     }
@@ -118,7 +118,7 @@ class Curso{
         }
     }
     
-    // ✅ NUEVO: Listar estudiantes con sus direcciones
+    // Listar estudiantes con sus direcciones
     listarEstudiantesConDireccion(){
         console.log(`\nEstudiantes del Curso ${this.nombreCurso} y sus direcciones:`);
         if (this.estudiantes.length === 0) {
@@ -134,12 +134,12 @@ class Curso{
 
 //INSTANCIAS
 
-// ✅ NUEVO: Crear direcciones primero
+// Crear direcciones primero
 let direccion1 = new Direccion("Calle 10 #15-20", "Medellín");
 let direccion2 = new Direccion("Carrera 25 #30-45", "Bogotá");
 let direccion3 = new Direccion("Avenida 80 #12-34", "Cali");
 
-// ✅ MODIFICADO: Crear personas CON direcciones
+// MODIFICADO: Crear personas CON direcciones
 let persona1 = new Persona("Adrian", 18, direccion1);
 let persona2 = new Persona("Eduardo", 20, direccion2);
 let persona3 = new Persona("Maria", 15, direccion3);
@@ -149,13 +149,13 @@ console.log("--- PERSONAS CON DIRECCIONES ---");
 persona1.mostrarInfo();
 persona2.mostrarInfo();
 
-// ✅ NUEVO: Mostrar direcciones específicamente
+// Mostrar direcciones específicamente
 console.log("\n--- DIRECCIONES COMPLETAS ---");
 persona1.mostrarDireccionCompleta();
 persona2.mostrarDireccionCompleta();
 persona3.mostrarDireccionCompleta();
 
-// ✅ NUEVO: Crear direcciones para estudiantes
+// Crear direcciones para estudiantes
 let direccionEst1 = new Direccion("Calle 50 #20-10", "Medellín");
 let direccionEst2 = new Direccion("Carrera 15 #25-30", "Medellín");
 let direccionEst3 = new Direccion("Avenida 30 #40-50", "Medellín");
@@ -173,7 +173,7 @@ persona3.Saludar();
 //Instancias de Estudiantes
 console.log(estudiante1.Presentarse());
 
-// ✅ NUEVO: Presentación completa con dirección
+// Presentación completa con dirección
 console.log("\n--- PRESENTACIONES COMPLETAS ---");
 console.log(estudiante1.PresentarseCompleto());
 console.log(estudiante2.PresentarseCompleto());
