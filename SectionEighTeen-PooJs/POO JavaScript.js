@@ -1,4 +1,5 @@
 //EJEMPLO DE HERENCIA
+//POO en JavaScript
 class Empleado {
     constructor(nombre, sueldo) {
         this.nombre = nombre;

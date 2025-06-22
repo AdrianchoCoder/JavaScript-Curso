@@ -29,3 +29,5 @@ console.log(e);
 
 e = Math.pow(2,3); // Esto de aqui es para realizar una potencia si es que estamos utilizando una version antigua de JavaScript como dice arriba.
 console.log(e);
+
+//Operadores de Asignacion
