@@ -96,4 +96,11 @@ console.log(mayorOIgualQue); // true
 let menorOIgualQue = (5 <= 3); // Compara si 5 es menor o igual que 3
 console.log(menorOIgualQue); // false
 
-
+//string interpolation
+//Nos permite insertar variables y expresiones dentro de cadenas de texto de manera más legible y concisa.
+// Se utiliza la sintaxis de comillas invertidas (``) y el uso de ${expresion} para insertar variables o expresiones dentro de la cadena.
+// Ejemplo de string interpolation
+let nombre = "Juan";
+let edad = 30;
+let mensaje = `Hola, mi nombre es ${nombre} y tengo ${edad} años.`;
+console.log(mensaje); // Hola, mi nombre es Juan y tengo 30 años.
