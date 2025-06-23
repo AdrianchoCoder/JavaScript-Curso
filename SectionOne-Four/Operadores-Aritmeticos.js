@@ -69,3 +69,31 @@ console.log(str3);
 let str4 = "El valor es: ";
 str4 += true; // str4 = str4 + true
 console.log(str4);
+
+//Operadores de Comparacion
+// Igualdad
+let igualdad = (5 == '5'); // Compara valor, no tipo
+console.log(igualdad); // true
+// Igualdad estricta
+let igualdadEstricta = (5 === '5'); // Compara valor y tipo
+console.log(igualdadEstricta); // false
+// Desigualdad
+let desigualdad = (5 != '5'); // Compara valor, no tipo
+console.log(desigualdad); // false
+// Desigualdad estricta
+let desigualdadEstricta = (5 !== '5'); // Compara valor y tipo
+console.log(desigualdadEstricta); // true
+// Mayor que
+let mayorQue = (5 > 3); // Compara si 5 es mayor que 3
+console.log(mayorQue); // true
+// Menor que
+let menorQue = (5 < 3); // Compara si 5 es menor que 3
+console.log(menorQue); // false
+// Mayor o igual que
+let mayorOIgualQue = (5 >= 5); // Compara si 5 es mayor o igual que 5
+console.log(mayorOIgualQue); // true
+// Menor o igual que
+let menorOIgualQue = (5 <= 3); // Compara si 5 es menor o igual que 3
+console.log(menorOIgualQue); // false
+
+
