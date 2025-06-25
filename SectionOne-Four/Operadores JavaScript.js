@@ -104,3 +104,5 @@ let nombre = "Juan";
 let edad = 30;
 let mensaje = `Hola, mi nombre es ${nombre} y tengo ${edad} años.`;
 console.log(mensaje); // Hola, mi nombre es Juan y tengo 30 años.
+
+
