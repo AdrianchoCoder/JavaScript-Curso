@@ -105,4 +105,30 @@ let edad = 30;
 let mensaje = `Hola, mi nombre es ${nombre} y tengo ${edad} años.`;
 console.log(mensaje); // Hola, mi nombre es Juan y tengo 30 años.
 
+//Operadores Logicos
+// AND (&&) - Devuelve true si ambos operandos son verdaderos
+let and = (true && false); // false
+console.log(and); // false
+//Ejemplo de AND
+let edad1 = 20;
+let tieneLicencia = true;
+let puedeConducir = (edad1 >= 18 && tieneLicencia); // true
+console.log(puedeConducir); // true
 
+
+// OR (||) - Devuelve true si al menos uno de los operandos es verdadero
+let or = (true || false); // true
+console.log(or); // true
+// Ejemplo de OR
+let edad2 = 16;
+let tienePermiso = true;
+let puedeEntrar = (edad2 >= 18 || tienePermiso); // true
+console.log(puedeEntrar); // true
+
+// NOT (!) - Invierte el valor de verdad del operando
+let not = !true; // false
+console.log(not); // false
+// Ejemplo de NOT
+let esEstudiante = false;
+let noEsEstudiante = !esEstudiante; // true
+console.log(noEsEstudiante); // true
