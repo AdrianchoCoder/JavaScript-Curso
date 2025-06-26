@@ -20,7 +20,7 @@ do {
 
 //Realizar la Suma de los Primeros 5 Numeros utilizando Ciclo While y Do While
 let numeros = 1, maximo = 10, sumador = 0;
-while (numero <= maximo){
+while (numeros <= maximo){
     console.log(numeros);
     numeros++;
     sumador += numeros;
