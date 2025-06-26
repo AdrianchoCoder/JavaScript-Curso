@@ -15,3 +15,11 @@ for (let numero = 1; numero <= maximo; numero += 3) {
 for (numero = 1; numero >= minimo; numero -= 3){
     console.log(numero);
 }
+
+//Realizar la Suma de los Primeros 5 Numeros utilizando un Ciclo For
+let sumador = 0
+for (let numero = 1; numero <= 5; numero++){
+    sumador += numero;
+    console.log(`Numero: ${numero}`)
+    console.log(`Sumatoria de los Numeros: ${sumador}`);
+}
