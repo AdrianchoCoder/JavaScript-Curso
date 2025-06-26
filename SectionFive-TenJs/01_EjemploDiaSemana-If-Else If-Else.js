@@ -1,9 +1,11 @@
 // Dia de la semana
 let diaSemana = 1;
 
+//Uso de IF
 if(diaSemana == 1){
     console.log('Lunes');
 }
+// Uso de Else If
 else if(diaSemana == 2){
     console.log('Martes');
 }
@@ -22,6 +24,7 @@ else if(diaSemana == 6){
 else if(diaSemana == 7){
     console.log('Domingo');
 }
+// Uso de Else
 else{
     console.log(`Dia semana erroneo ${diaSemana}`);
 }
