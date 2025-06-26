@@ -19,10 +19,17 @@ do {
 // Puedes cambiar el valor inicial de numeroDoWhile o el límite superior (10) para ver diferentes resultados.
 
 //Realizar la Suma de los Primeros 5 Numeros utilizando Ciclo While y Do While
-let numeros = 1, maximo = 10, sumador = 0;
+let numeros = 1, maximo = 10, sumador = 0, numerosDo = 1, sumadorDo = 0;
 while (numeros <= maximo){
     console.log(numeros);
     sumador += numeros;
     numeros++;
     console.log(`La Suma de los Numeros: ${sumador}`);
 }
+
+do{
+    console.log(numerosDo);
+    sumadorDo += numerosDo;
+    numerosDo++;
+    console.log(`La Suma de los Numeros: ${sumadorDo}`);
+}while (numerosDo <= maximo);
