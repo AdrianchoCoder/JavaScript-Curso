@@ -17,3 +17,12 @@ do {
 } while (numeroDoWhile <= 10); // Mientras numeroDoWhile sea menor o igual a 10
 // Este ciclo se ejecutará al menos una vez, incluso si la condición es falsa desde el principio.
 // Puedes cambiar el valor inicial de numeroDoWhile o el límite superior (10) para ver diferentes resultados.
+
+//Realizar la Suma de los Primeros 5 Numeros utilizando Ciclo While y Do While
+let numeros = 1, maximo = 10, sumador = 0;
+while (numero <= maximo){
+    console.log(numeros);
+    numeros++;
+    sumador += numeros;
+    console.log(`La Suma de los Numeros: ${sumador}`);
+}
