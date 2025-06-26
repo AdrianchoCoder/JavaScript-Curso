@@ -12,6 +12,6 @@ for (let numero = 1; numero <= maximo; numero += 3) {
 
 
 //imprimir los Numeros del 1 al -10 de 3 en 3
-for (numero = 1; numero >= -10; numero -= 3){
+for (numero = 1; numero >= minimo; numero -= 3){
     console.log(numero);
 }
