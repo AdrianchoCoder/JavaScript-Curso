@@ -19,5 +19,19 @@ que queremos hacer referencia. */
 for(propiedades in persona){
     console.log(propiedades); /*Con este console log podemos 
     acceder a todos los nombres de las propiedades*/
-    console.log(persona[propiedades]);
+    console.log(persona[propiedades]); /* Con esto Podemos acceder a todas las propiedades con sus
+    valores */
 };
+
+// Agregar o Eliminar Propiedades de un Objeto
+
+// Agregar una Nueva Propiedad:
+persona.telefono = "3147910"; // De esta manera podemos agregar nuevas proiedades
+// Y Si las volvelmos a colocar pero modificamos su valor cambiara el valor de esa propiedad
+persona.telefono = "3148911";
+console.log(persona.telefono);
+
+// Eliminar Una Propiedad de un Objeto
+
+delete persona.telefono; // De esta manera se puede eliminar una propiedad de un objeto
+console.log(persona);
